@@ -13,3 +13,22 @@
   <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
+
+
+const employee = {
+  name : "chirs",
+  streetAddress: "2125 Amsterdam",
+};
+employee;
+const key = employee.name,streetAddresss;
+
+
+function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value){
+employee[key] = value;
+return employee;
+};
+const newEmployee = employee;
+
+function NondestructivelyUpdateEmployeeWithKeyAndValue(obj, key, value){
+  const newEmployee[key] = {...employee};
+}
